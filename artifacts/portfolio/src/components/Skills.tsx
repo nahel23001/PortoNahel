@@ -31,7 +31,7 @@ export const Skills: React.FC = () => {
               >
                 <div>
                   {/* Container Ikon */}
-                  <div className="w-12 h-12 mb-5 flex items-center justify-start rounded-lg overflow-hidden text-foreground/70 group-hover:text-[hsl(var(--primary))] transition-colors duration-300">
+                  <div className="w-12 h-12 mb-5 flex items-center justify-start rounded-lg overflow-hidden text-foreground/70 transition-colors duration-300">
                     
                     {/* Adobe Premiere Pro */}
                     {tool.name === "Adobe Premiere Pro" && (
@@ -47,24 +47,38 @@ export const Skills: React.FC = () => {
                       </div>
                     )}
 
-                    {/* Figma */}
+                    {/* Figma (Presisi Grid Resmi) */}
                     {tool.name === "Figma" && (
-                      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9">
-                        <path d="M12 12c2.485 0 4.5-2.015 4.5-4.5S14.485 3 12 3H7.5v9H12zm-4.5 1.5A4.5 4.5 0 0 0 12 18c2.485 0 4.5-2.015 4.5-4.5V13.5H7.5zm0-6V7.5H12c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5H7.5zm0 10.5V15h4.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5H7.5zM16.5 12c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z"/>
+                      <svg viewBox="0 0 24 24" className="w-9 h-9 select-none" fill="none">
+                        <path d="M9 3a3 3 0 0 0 0 6h3V3H9z" fill="#F24E1E" />
+                        <circle cx="15" cy="6" r="3" fill="#FF7262" />
+                        <path d="M9 9a3 3 0 0 0 0 6h3V9H9z" fill="#A259FF" />
+                        <circle cx="15" cy="12" r="3" fill="#1ABC9C" />
+                        <path d="M9 15a3 3 0 0 0-3 3 3 3 0 0 0 3 3h3v-6H9z" fill="#0ACF83" />
                       </svg>
                     )}
 
-                    {/* Canva */}
+                    {/* Canva (Gradasi Pop Modern dengan Huruf C Putih) */}
                     {tool.name === "Canva" && (
-                      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9">
-                        <path d="M21.914 10.01c-.13-.74-.49-1.39-1.04-1.89l.02-.02c-.52-.45-1.16-.74-1.89-.85-.14-.02-.27-.03-.41-.03-.89 0-1.7.39-2.28 1.02-.27.31-.48.67-.62 1.07-.46 1.25-.63 2.7-.63 4.19 0 .61.03 1.22.08 1.81.1.97.35 1.86.85 2.58.46.66 1.1 1.13 1.88 1.31.21.05.43.08.66.08.81 0 1.54-.31 2.11-.84.62-.57 1.01-1.36 1.14-2.27.05-.34.07-.69.07-1.05 0-1.81-.46-3.62-1.14-5.11zm-5.02 5.03c-.04-.54-.06-1.1-.06-1.65 0-1.27.14-2.48.49-3.52.12-.34.28-.65.48-.91.3-.4.73-.65 1.24-.65.1 0 .19.01.29.02.48.07.89.31 1.19.68.32.39.5.9.54 1.48.01.12.02.24.02.37 0 1.45-.37 2.91-.94 4.14-.15.34-.35.64-.59.88-.31.33-.74.52-1.22.52-.14 0-.28-.01-.42-.04-.51-.11-.91-.41-1.16-.83-.17-.29-.28-.62-.36-.99zM7.52 4.26c-.11-.02-.23-.03-.35-.03-.81 0-1.54.34-2.07.9a4.26 4.26 0 0 0-1.06 1.95c-.15.65-.19 1.37-.15 2.14.07 1.41.45 2.65 1.1 3.51.48.63 1.14 1.04 1.92 1.14.12.01.24.02.36.02.66 0 1.26-.22 1.76-.6.28-.21.52-.48.71-.79.35-.55.57-1.25.68-2.07.03-.23.05-.47.05-.72 0-1.42-.31-2.73-.89-3.75a3.74 3.74 0 0 0-1.67-1.59l-.7-.14zm.27 4.96c0 .19-.01.37-.03.56-.07.71-.24 1.3-.5 1.71-.18.29-.44.47-.76.47-.07 0-.14-.01-.2-.02-.37-.05-.68-.26-.88-.58-.22-.36-.36-.88-.42-1.53-.02-.2-.03-.4-.03-.61 0-1 .18-1.92.5-2.61.12-.27.28-.49.48-.65.23-.19.52-.29.84-.29.08 0 .16.01.24.02.39.06.72.28.93.61.22.35.37.85.45 1.49.02.14.02.28.02.43z"/>
+                      <svg viewBox="0 0 24 24" className="w-9 h-9 select-none">
+                        <defs>
+                          <linearGradient id="canvaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor="#00C4CC" />
+                            <stop offset="100%" stopColor="#7D2AE8" />
+                          </linearGradient>
+                        </defs>
+                        <circle cx="12" cy="12" r="10" fill="url(#canvaGradient)" />
+                        <path d="M14.5 8.5c-.5-.5-1.2-.8-2-.8-1.7 0-3 1.3-3 3s1.3 3 3 3c.8 0 1.5-.3 2-.8.3-.3.5-.1.3.2-.5 0.8-1.4 1.3-2.3 1.3-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5c1 0 1.8 0.4 2.3 1.1.2 0.3 0 0.5-.3 0.2z" fill="white" />
                       </svg>
                     )}
 
-                    {/* Microsoft Office */}
+                    {/* Microsoft Office (Warna Oranye Resmi Office) */}
                     {tool.name === "Microsoft Office" && (
-                      <svg role="img" viewBox="0 0 24 24" className="w-9 h-9" fill="currentColor">
-                        <path d="M12.22 0l11.43 4.14v15.72L12.22 24V0zm-11.4 4.3l10.15-1.83v18.98L.82 19.64V4.3z"/>
+                      <svg viewBox="0 0 24 24" className="w-9 h-9 select-none">
+                        <path d="M1H16.5V23H1V4.5z" fill="#E64A19" opacity="0.1" />
+                        <path d="M23 4.5L12.5 1v22L23 19.5V4.5z" fill="#E64A19" />
+                        <path d="M12.5 3.5L2 5.5v13l10.5 2V3.5z" fill="#FF5722" />
+                        <path d="M5.5 9.5h4v5h-4v-5z" fill="white" opacity="0.9" />
                       </svg>
                     )}
 

@@ -168,7 +168,7 @@ export const content = {
       year: "2025"
     },
     { 
-      title: "Apper-Up, Putra Putri Fikom", 
+      title: "Runner-Up, Putra Putri Fikom", 
       event: "Universitas Padjadjaran, Faculty of Communication — A faculty-level competition assessing academic achievement, communication skills, and social contribution. Reached the runner-up position out of candidates representing all departments within the Faculty of Communication.", 
       year: "2024"
     },
